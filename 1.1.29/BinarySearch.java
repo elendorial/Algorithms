@@ -20,7 +20,7 @@ public class BinarySearch
             return indexOf(key, a, mid + 1, hi);
         else
             return mid;
-	}
+    }
 
     public static int rank(int key, int[] a)
     {
@@ -60,19 +60,19 @@ public class BinarySearch
         return count;
     }
 
-	public static void main(String[] args)
-	{
-		In in = new In(args[0]);
-        int[] whitelist = in.readAllInts();
+    public static void main(String[] args)
+    {
+      In in = new In(args[0]);
+      int[] whitelist = in.readAllInts();
 
-		Arrays.sort(whitelist);
+      Arrays.sort(whitelist);
 
-		while(!StdIn.isEmpty())
-		{
-			int key = StdIn.readInt();
-            System.out.println(count(key,whitelist));
-		}
-	}
+      while(!StdIn.isEmpty())
+      {
+         int key = StdIn.readInt();
+         System.out.println(count(key,whitelist));
+     }
+ }
 }
 
 
