@@ -1,17 +1,17 @@
-import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdIn;
-import edu.princeton.cs.algs4.StdOut;
+    import edu.princeton.cs.algs4.In;
+    import edu.princeton.cs.algs4.StdIn;
+    import edu.princeton.cs.algs4.StdOut;
 
-import java.util.*;
+    import java.util.*;
 
-public class BinarySearch
-{
+    public class BinarySearch
+    {
 
-	private BinarySearch() { }
+    private BinarySearch() { }
 
-	public static int indexOf(int key, int[] a, int lo, int hi)
-	{
-		if(lo > hi)
+    public static int indexOf(int key, int[] a, int lo, int hi)
+    {
+    	if(lo > hi)
             return -1;
         int mid = lo + (hi - lo) / 2;
         if(key < a[mid])
@@ -72,7 +72,7 @@ public class BinarySearch
          int key = StdIn.readInt();
          System.out.println(count(key,whitelist));
      }
- }
-}
+    }
+    }
 
 
