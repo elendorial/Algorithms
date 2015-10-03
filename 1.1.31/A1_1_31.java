@@ -23,24 +23,24 @@
             StdDraw.setXscale(-640, 640);
             StdDraw.setYscale(-360, 360);
 
-           for(int i = 0; i < N; i++)
-           {
-            theta = Math.toRadians(i * 360.0 / N);
-            x = 300 * Math.cos(theta);
-            y = 300 * Math.sin(theta);
-            points[i][0] = x;
-            points[i][1] = y;
-            StdDraw.point(x, y);
-           }
+            for(int i = 0; i < N; i++)
+            {
+                theta = Math.toRadians(i * 360.0 / N);
+                x = 300 * Math.cos(theta);
+                y = 300 * Math.sin(theta);
+                points[i][0] = x;
+                points[i][1] = y;
+                StdDraw.point(x, y);
+            }
 
-           StdDraw.setPenColor(StdDraw.GRAY);
-           StdDraw.setPenRadius();
+            StdDraw.setPenColor(StdDraw.GRAY);
+            StdDraw.setPenRadius();
 
-           for(int i = 0; i < N - 1; i++)
-           {
-            if(StdRandom.random() < p)
-                StdDraw.line(points[i][0], points[i][1], points[i + 1][0], points[i + 1][1]);
-           }
+            for(int i = 0; i < N - 1; i++)
+            {
+                if(StdRandom.random() < p)
+                    StdDraw.line(points[i][0], points[i][1], points[i + 1][0], points[i + 1][1]);
+            }
 
             StdDraw.show();
 
