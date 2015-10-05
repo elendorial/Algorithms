@@ -13,7 +13,7 @@ public class A1_1_32
 
         for(int i = 0; i < a.length; i++)
         {
-            int index = (int)Math.floor(((a[i] - l) / (r - l)) * N);
+            int index = (int)Math.floor((a[i] - l) / step);
             if(index == N)
             {
                 frequencies[N-1] += 1;
@@ -72,9 +72,9 @@ public class A1_1_32
             if(whitelist[i] > max) max = whitelist[i];
         }
 
-
-
         freq(whitelist, min, max, N);
+
+
 
     }
 
